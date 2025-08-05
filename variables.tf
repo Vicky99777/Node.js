@@ -1,8 +1,9 @@
-provider "aws" {
-  region = var.aws_region
+variable "aws_region" {
+  description = "AWS region"
+  default     = "us-east-1"
 }
 
-resource "aws_s3_bucket" "my_bucket" {
-  bucket = var.bucket_name
-  force_destroy = true
+variable "vikas" {
+  description = "vikas bucket for portfolio hosting"
+  default     = "my-tf-bucket-vikas-xyz2025" # must be globally unique!
 }
