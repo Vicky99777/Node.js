@@ -5,5 +5,5 @@ variable "aws_region" {
 
 variable "vikas" {
   description = "vikas bucket for portfolio hosting"
-  default     = "my-tf-bucket-vikas-xyz2025" # must be globally unique!
+  default     = "vikas-bucket-aug5-1220pm" # must be globally unique!
 }
