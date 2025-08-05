@@ -1,14 +1,8 @@
 provider "aws" {
-  region = "ap-south-1"  # Mumbai
+  region = var.aws_region
 }
 
-
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = var.bucket_name
+  bucket = "vikas-terraform-bucket-8a5e1c"
   acl    = "private"
-
-  tags = {
-    Name        = "MyTerraformBucket"
-    Environment = "Dev"
-  }
 }
